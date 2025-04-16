@@ -1,6 +1,5 @@
 import pandas as pd
 from assets.geospatial_assets import geospatial_partitioned_asset
-from assets.input_assets import previous_day_output
 from dagster import Definitions, EnvVar
 from io_resources.s3 import MyS3Config
 

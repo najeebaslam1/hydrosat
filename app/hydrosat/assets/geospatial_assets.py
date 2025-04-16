@@ -9,10 +9,6 @@ from io_resources.s3 import MyS3Config
 from parameters import DAILY_PARTITIONS_DEF
 
 
-# @asset(
-#     partitions_def=DAILY_PARTITIONS_DEF,
-#     ins={"previous_data": AssetIn("previous_day_output")},
-# )
 @asset(
     partitions_def=DAILY_PARTITIONS_DEF,
 )
