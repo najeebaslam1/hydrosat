@@ -1,0 +1,7 @@
+aws_access_key_id     = "copy_from_file_terraform.tfvars_sent_via_email"
+aws_secret_access_key = "copy_from_file_terraform.tfvars_sent_via_email"
+aws_default_region    = "ZXUtd2VzdC0x"
+docker_username       = "najeebrgn"
+docker_password       = "dckr_pat_4yoWQvLVN932LR6NkNmrvrNSySI"
+s3_bucket             = "hydrosat"
+aws_region            = "eu-west-1"

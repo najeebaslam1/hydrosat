@@ -1,0 +1,29 @@
+#!make
+include .env
+
+.PHONY: all_targets 
+all_targets: declare build_docker update_helm expose_dagster_ui
+
+declare:
+	@echo "This is a Makefile for deploying Dagster on Kubernetes"
+	@echo "This act Minimalistic CI/CD "
+	@echo "  build_docker: Build and push Docker image"
+	@echo "  update_helm: Update Helm chart"
+	@echo "  expose_dagster_ui: Expose Dagster UI"
+
+build_docker:
+	docker login --username najeebrgn --password $(DOCKER_PASSWORD)
+	docker build . -t hydrosat_najeeb:7
+	docker tag hydrosat_najeeb:7 najeebrgn/hydrosat_najeeb:7
+	docker push najeebrgn/hydrosat_najeeb:7
+
+# update_helm:
+# 	helm repo add dagster https://dagster-io.github.io/helm
+# 	helm repo update
+# 	helm search repo dagster/dagster	
+# 	helm upgrade --install dagster dagster/dagster -f values.yaml 
+
+# expose_dagster_ui:
+# 	export DAGSTER_WEBSERVER_POD_NAME=$(kubectl get pods --namespace default -l "app.kubernetes.io/name=dagster,app.kubernetes.io/instance=dagster,component=dagster-webserver" -o jsonpath="{.items[0].metadata.name}")
+# 	echo "Visit http://127.0.0.1:8080 to open the Dagster UI"
+# 	kubectl --namespace default port-forward $DAGSTER_WEBSERVER_POD_NAME 8080:80 >> server_logs.txt &
