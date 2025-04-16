@@ -1,7 +1,1 @@
-copy_from_file_terraform.tfvars_sent_via_email"
-aws_secret_access_key = "copy_from_file_terraform.tfvars_sent_via_email"
-aws_default_region    = "copy_from_file_terraform.tfvars_sent_via_email"
-docker_username       = "najeebrgn"
-docker_password       = "copy_from_file_terraform.tfvars_sent_via_email"
-s3_bucket             = "hydrosat"
-aws_region            = "eu-west-1"
+#copy_from_file_terraform.tfvars_sent_via_email"
