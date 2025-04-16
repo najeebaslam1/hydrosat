@@ -64,7 +64,7 @@ venv/
 *.iml
 ./venv/*
 
-.env
+
 uv.lock
 **/*.ipynb
 
