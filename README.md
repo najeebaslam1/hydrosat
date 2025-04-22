@@ -271,6 +271,28 @@ Use `dagster dev` to open a local development UI.
 
 ---
 
+# 📚 References
+
+#### Dagster Documentation
+- [Getting Started with Dagster](https://docs.dagster.io/getting-started)
+- [Dagster Assets Overview](https://docs.dagster.io/concepts/assets)
+- [Dagster Kubernetes Deployment](https://docs.dagster.io/deployment/kubernetes)
+
+#### GitHub Repositories
+- [dagster-io/dagster](https://github.com/dagster-io/dagster)
+- [dagster-io/dagster-project-example](https://github.com/dagster-io/dagster-project-example)
+
+#### Terraform Documentation
+- [Terraform by HashiCorp](https://www.terraform.io/docs)
+- [Helm Provider for Terraform](https://registry.terraform.io/providers/hashicorp/helm/latest)
+
+### AI
+- [GitHub Copilot](https://github.com/features/copilot)
+- [ChatGbt version 4.o](https://chatgpt.com/) 
+
+
+---
+
 ## 📬 Feedback
 
 Found a bug or want to contribute? Feel free to open an issue or pull request on GitHub.
